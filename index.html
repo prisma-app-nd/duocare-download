@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DuoCare — Descargar app</title>
+<link rel="icon" href="icon.png" />
+<style>
+  :root {
+    --bg: #0B131A;
+    --panel: #131C24;
+    --border: rgba(255,255,255,0.08);
+    --text: #F2F5F7;
+    --muted: #9AA4B0;
+    --duo: #46A3D7;
+    --care: #3FC3C3;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .brand span {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  .brand .duo { color: var(--duo); }
+  .brand .care { color: var(--care); }
+
+  .slogan {
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0 0 48px;
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 28px;
+    text-align: center;
+  }
+
+  .card h1 {
+    font-size: 22px;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .card p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 28px;
+  }
+
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 64px;
+    background: var(--duo);
+    color: #06111a;
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 16px;
+    padding: 0 24px;
+  }
+
+  .download-btn:active { opacity: 0.85; }
+
+  .meta {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .steps {
+    margin-top: 40px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+  }
+
+  .steps h2 {
+    font-size: 17px;
+    margin: 0 0 16px;
+    color: var(--care);
+  }
+
+  .steps ol {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .steps li { margin-bottom: 4px; }
+  .steps strong { color: var(--text); }
+
+  .note {
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <img src="icon.png" alt="" />
+      <span><span class="duo">Duo</span><span class="care">Care</span></span>
+    </div>
+    <p class="slogan">Registra. Controla. Cuídate.</p>
+
+    <div class="card">
+      <h1>Descargá la app para Android</h1>
+      <p>Registrá presión arterial y glucosa, programá recordatorios y compartí reportes con tu médico.</p>
+      <a class="download-btn" href="https://github.com/prisma-app-nd/DuoCare/releases/latest/download/DuoCare.apk" download>
+        Descargar APK
+      </a>
+      <p class="meta">Android · instalación directa (fuera de Google Play)</p>
+    </div>
+
+    <div class="steps">
+      <h2>Cómo instalarla</h2>
+      <ol>
+        <li>Tocá <strong>Descargar APK</strong> arriba.</li>
+        <li>Si el celular avisa "no se permite instalar apps de origen desconocido", entrá a <strong>Configuración</strong> desde ese mismo aviso y activá <strong>"Permitir de esta fuente"</strong>.</li>
+        <li>Abrí el archivo descargado y tocá <strong>Instalar</strong>.</li>
+        <li>Si aparece un aviso de Play Protect, tocá <strong>"Instalar de todos modos"</strong>.</li>
+      </ol>
+    </div>
+
+    <p class="note">
+      Este es un build interno de preview, no distribuido por Google Play.<br />
+      El link de descarga apunta siempre a la última versión publicada.
+    </p>
+  </div>
+</body>
+</html>
